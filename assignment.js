@@ -53,3 +53,19 @@ function hotelCost(stayDays){
 }
 var days = hotelCost(21);
 console.log("Hotel Stay Cost:",days);
+
+//Assignment Function-4 : megaFriend Function for largest name in array 
+function megaFriend(friendNameArray){
+    var ConditionalLength = 0;
+    var largestName;
+    for(var i = 0; i < friendNameArray.length; i++){
+        if(friendNameArray[i].length > ConditionalLength){
+            ConditionalLength = friendNameArray[i].length;
+            largestName = friendNameArray[i];
+        }
+    }return largestName;
+}
+var friendName = ['Short','ShortPlusLong'];
+var typeArray =friendName.typeof();
+console.log(typeArray);
+console.log("Largest Name: ",megaFriend(friendName));
